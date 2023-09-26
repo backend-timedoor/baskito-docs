@@ -5,6 +5,8 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
+    "@types/select2": "^4.0.57",
+    "sass": "^1.68.0",
     "vitepress": "1.0.0-rc.20"
   },
   "pnpm": {
@@ -14,5 +16,10 @@
         "search-insights"
       ]
     }
+  },
+  "dependencies": {
+    "@timedoor/baskito-ui": "^0.3.0",
+    "sweetalert": "^2.1.2",
+    "vue": "^3.2.45"
   }
 }

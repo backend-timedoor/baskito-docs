@@ -22,11 +22,7 @@ import { BKAlert } from "@timedoor/baskito-ui";
 <BKAlert dismissible>This is a primary alert—check it out!</BKAlert>
 ```
 
-::: tip
-You are not required to import the component manually. All components are registered globally.
-:::
-
-## Variants
+## Color
 
 Use the `color` prop to style the alert with a different color.
 

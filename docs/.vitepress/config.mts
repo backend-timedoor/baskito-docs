@@ -5,13 +5,6 @@ export default defineConfig({
   title: "Baskito",
   description: "Laravel starter kit integrated with Stisla, Inertia, and Vue 3",
   head: [
-    // [
-    //   "link",
-    //   {
-    //     rel: "stylesheet",
-    //     href: "https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css",
-    //   },
-    // ],
     [
       "link",
       {
@@ -83,6 +76,9 @@ export default defineConfig({
           items: [
             { text: "Alert", link: "/components/" },
             { text: "Button", link: "/components/button.html" },
+            { text: "Form Input", link: "/components/form-input.html" },
+            { text: "Modal", link: "/components/modal.html" },
+            { text: "Pagination", link: "/components/pagination.html" },
           ],
         },
       ],

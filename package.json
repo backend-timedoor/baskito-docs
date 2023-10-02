@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@timedoor/baskito-ui": "^0.3.0",
+    "bootstrap": "4.6",
     "sweetalert": "^2.1.2",
     "vue": "^3.2.45"
   }

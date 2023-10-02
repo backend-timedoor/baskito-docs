@@ -14,10 +14,6 @@ const showMediumModal = () => {
 const showLargeModal = () => {
     $('#large-modal').modal('show');
 }
-
-const test = () => {
-    console.log('hello')
-}
 </script>
 
 # Modal

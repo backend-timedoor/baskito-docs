@@ -66,14 +66,16 @@ $users = App\Models\User::paginate(5);
 
 ```vue
 <script setup lang="ts">
-import { BKPaginationLink } from "@timedoor/baskito-ui";
+import { BKPaginationData } from "@timedoor/baskito-ui";
 
-type Users = {
-  links: BKPaginationLink[];
-};
+interface User {
+  id: number;
+  name: string;
+  email: string;
+}
 
 defineProps<{
-  users: Users;
+  users: BKPaginationData<User>;
 }>();
 </script>
 ```
@@ -82,25 +84,25 @@ defineProps<{
 <BKPagination :links="users.links" />
 ```
 
-You can also use `<BKPagination>` component with laravel [resource collection](https://laravel.com/docs/10.x/eloquent-resources) instead of paginate method.
+You can also use `<BKPagination>` component with laravel [resource collection](https://laravel.com/docs/10.x/eloquent-resources).
 
 ```php
-$users           = App\Models\User::all();
+$users           = App\Models\User::paginate(5);
 $usersCollection = App\Http\Resources\UserResource::collection($users);
 ```
 
 ```vue
 <script setup lang="ts">
-import { BKPaginationLink } from "@timedoor/baskito-ui";
+import { BKResourceCollection } from "@timedoor/baskito-ui";
 
-type UsersCollection = {
-  meta: {
-    links: BKPaginationLink[];
-  };
-};
+interface User {
+  id: number;
+  name: string;
+  email: string;
+}
 
 defineProps<{
-  usersCollection: UsersCollection;
+  usersCollection: BKResourceCollection<User>;
 }>();
 </script>
 ```
@@ -109,10 +111,12 @@ defineProps<{
 <BKPagination :links="usersCollection.meta.links" />
 ```
 
+You can see interface of links properties [here](https://github.com/backend-timedoor/baskito-ui/blob/master/src/types/components/Pagination/BKPagination.ts)
+
 ## Component Options
 
-| Prop           | Type                                                                                                                                    | Default | Description                                 |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------------------------------------------- |
-| links          | Array of [BKPaginationLink](https://github.com/backend-timedoor/baskito-ui/blob/master/src/types/components/Pagination/BKPagination.ts) | `null`  | An array of links to be displayed.          |
-| preserveScroll | Boolean                                                                                                                                 | `false` | Preserve scroll position after page change. |
-| perserveState  | Boolean                                                                                                                                 | `false` | Preserve state after page change.           |
+| Prop           | Type    | Default | Description                                 |
+| -------------- | ------- | ------- | ------------------------------------------- |
+| links          | Array   | `null`  | An array of links to be displayed.          |
+| preserveScroll | Boolean | `false` | Preserve scroll position after page change. |
+| perserveState  | Boolean | `false` | Preserve state after page change.           |

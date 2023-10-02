@@ -66,6 +66,16 @@ export default defineConfig({
             { text: "Component", link: "/guide/component.html" },
           ],
         },
+        {
+          text: "Customization",
+          collapsed: true,
+          items: [
+            {
+              text: "Customizing Stisla Theme",
+              link: "/guide/customizing-stisla-theme.html",
+            },
+          ],
+        },
       ],
       "/components/": [
         {

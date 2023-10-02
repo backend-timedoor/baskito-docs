@@ -78,6 +78,7 @@ export default defineConfig({
             { text: "Form Select", link: "/components/form-select.html" },
             { text: "Modal", link: "/components/modal.html" },
             { text: "Pagination", link: "/components/pagination.html" },
+            { text: "Sweet Alert", link: "/components/sweet-alert.html" },
           ],
         },
       ],

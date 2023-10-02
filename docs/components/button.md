@@ -49,13 +49,77 @@ Use the `variant` prop to style the button with a different variant.
 <BKButton style="margin-right: 10px; margin-bottom: 10px" variant="fill">Button Fill Variant</BKButton>
 <BKButton style="margin-right: 10px; margin-bottom: 10px" variant="outline">Button Outline Variant</BKButton>
 
+```html
+<BKButton variant="fill">Button Fill Variant</BKButton>
+<BKButton variant="outline">Button Outline Variant</BKButton>
+```
+
+## Block
+
+Use the `block` prop to create a block button.
+
+<BKButton block>Button Block</BKButton>
+
+```html
+<BKButton block>Button Block</BKButton>
+```
+
+## Size
+
+Use the `size` prop to change the size of the button.
+
+<BKButton style="margin-right: 10px; margin-bottom: 10px" size="sm">Button Small</BKButton>
+<BKButton style="margin-right: 10px; margin-bottom: 10px" size="md">Button Medium</BKButton>
+<BKButton style="margin-right: 10px; margin-bottom: 10px" size="lg">Button Large</BKButton>
+
+```html
+<BKButton size="sm">Button Small</BKButton>
+<BKButton size="md">Button Medium</BKButton>
+<BKButton size="lg">Button Large</BKButton>
+```
+
+## Shape
+
+Use the `shape` prop to change the shape of the button.
+
+<BKButton style="margin-right: 10px; margin-bottom: 10px" shape="default">Button Default</BKButton>
+<BKButton style="margin-right: 10px; margin-bottom: 10px" shape="square">Button Square</BKButton>
+<BKButton style="margin-right: 10px; margin-bottom: 10px" shape="pill">Button Pill</BKButton>
+
+```html
+<BKButton shape="default">Button Default</BKButton>
+<BKButton shape="square">Button Square</BKButton>
+<BKButton shape="pill">Button Pill</BKButton>
+```
+
+## Disabled
+
+Use the `disabled` prop to disable the button.
+
+<BKButton disabled>Button Disabled</BKButton>
+
+```html
+<BKButton disabled>Button Disabled</BKButton>
+```
+
+## Progress
+
+Use the `progress` prop to show loading icon on the button.
+
+<BKButton progress>Button Progress</BKButton>
+
+```html
+<BKButton progress>Button Progress</BKButton>
+```
+
 ## Component Options
 
-| Prop        | Type    | Default   | Description                                                                                                                   |
-| ----------- | ------- | --------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| color       | String  | `primary` | The color variant of the alert. Can be one of `primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark` |
-| icon        | String  | `null`    | The icon of the alert. You can use any icon from [Font Awesome](https://fontawesome.com/v5/search?o=r&m=free)                 |
-| title       | String  | `null`    | The title of the alert                                                                                                        |
-| dismissible | Boolean | `false`   | Whether the alert can be dismissed by the user or not                                                                         |
-| show        | Boolean | `true`    | Whether the alert is visible or not                                                                                           |
-| fade        | Boolean | `false`   | Whether the alert should fade in and out                                                                                      |
+| Prop     | Type    | Default   | Description                                                                                                                   |
+| -------- | ------- | --------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| color    | String  | `primary` | The color variant of the alert. Can be one of `primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark` |
+| variant  | String  | `fill`    | The variant of the button. Can be one of `fill`, `outline`                                                                    |
+| block    | Boolean | `false`   | The block state of the button.                                                                                                |
+| size     | String  | `md`      | The size of the button. Can be one of `sm`, `md`, `lg`                                                                        |
+| shape    | String  | `default` | The shape of the button. Can be one of `default`, `square`, `pill`                                                            |
+| disabled | Boolean | `false`   | The disabled state of the button.                                                                                             |
+| progress | Boolean | `false`   | Show loading icon on the button.                                                                                              |

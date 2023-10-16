@@ -5,9 +5,9 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "@types/select2": "^4.0.57",
-    "sass": "^1.68.0",
-    "vercel": "^32.3.1",
+    "@types/select2": "^4.0.59",
+    "sass": "^1.69.3",
+    "vercel": "^32.4.1",
     "vitepress": "1.0.0-rc.20"
   },
   "pnpm": {
@@ -19,9 +19,9 @@
     }
   },
   "dependencies": {
-    "@timedoor/baskito-ui": "^0.3.0",
-    "bootstrap": "4.6",
+    "@timedoor/baskito-ui": "^0.3.1",
+    "bootstrap": "~4.6.2",
     "sweetalert": "^2.1.2",
-    "vue": "^3.2.45"
+    "vue": "^3.3.4"
   }
 }
